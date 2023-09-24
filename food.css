@@ -1,0 +1,92 @@
+.imagelist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    width: 20%;
+    margin: 20px;
+    
+}
+.image img{
+    width: 100%;
+    aspect-ratio: 10/9;
+    transition: 0.5s;
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+.desc{
+    height: 100%;
+}
+.desc p{
+    font-size: 10px;
+}
+.image button{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: green;
+    font-style: italic;
+    margin: 10px 0;
+}
+/*recipee styling here */
+.recipe{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.recipe img{
+    width: 200px;
+}
+.ingridients{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.recipe ul{
+    margin: 10px;
+}
+.recipe li{
+    padding: 5px;list-style-type: square;
+}
+.video{
+    width: 300px;
+}
+video{
+    width: 100%;
+}
+.recipe div{
+    margin: 10px;
+}
+.recipe h2{
+    margin: 10px;
+}
+.procidure{
+    margin: 10px;
+}
+@media (max-width:500px){ 
+    .image{
+        width: 90%;
+        margin: 10px;
+    }
+    .image img{
+        width: 100%;
+        
+    }
+    .video{
+        width: 90%;
+    }
+}
+@media screen and(max-width:835px)and(min-width:501px){
+    .desc p{
+        font-size: 10px;
+        color: rgb(35, 1, 254);
+    }
+}
